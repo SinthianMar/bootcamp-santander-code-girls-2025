@@ -15,7 +15,7 @@
 - Modelos de Serviço (IaaS, PaaS, SaaS)
 - IAM e segurança básica
 
-[Ver resumo completo](./resumos/fundamentos-nuvem.md)
+[Ver resumo completo](./resumos/fundamentos-da-nuvem.md)
 
 ---
 
