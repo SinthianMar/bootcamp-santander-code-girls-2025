@@ -159,7 +159,7 @@ O professor apresenta de forma concisa todos os campos do site e explica a funç
 ### ⇨ O que é um IAM - Usuários da conta
 - **Console AWS:** Página inicial da AWS com informações gerais
   
-<img src="../imagens/console-aws.png" width="900" height="308" alt="console-aws">   
+<img src="../imagens/console-aws.png" width="900" height="459" alt="console-aws">   
 
 - **Interface CLI:** Permite criar comandos para criar recursos
 - **CloudShell:** Alternativa para criar e gerenciar recursos via navegador
@@ -211,7 +211,7 @@ Não é recomendado.
 - O ideal é criar um **usuário IAM** com permissões específicas (por exemplo, admin ou apenas S3, EC2, etc.) e gerar a chave de acesso para ele.
 
 <p align="center">
-<img src="../imagens/iam.png" width="311" height="211" alt="iam">
+<img src="../imagens/iam.png" width="411" height="311" alt="iam">
 </p>
 
 **Resumo:**
