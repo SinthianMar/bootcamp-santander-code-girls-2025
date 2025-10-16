@@ -21,6 +21,14 @@ Este documento apresenta uma visão geral sobre a história da Amazon e da AWS, 
 A Amazon foi fundada pelo Jeff Bezos, estava na moda a criação de sites pela internet e então ele teve uma grande ideia, uma <ins>livraria online!</ins>
 Logo, iniciou o projeto de livraria online em 1994. O escritório era em sua garagem, localizada em Seattle, Washington. O site foi lançado oficialmente em 1995!
 
+<p align="center">
+  <img src="../imagens/amazon.png" width="440" height="360" alt="Amazon">
+</p>
+
+<p align="center">
+  📚 A loja de tudo: Jeff Bezos e a era da Amazon.
+</p>
+
 ### 🔹 Curiosidades!
 
 > - O nome inicial da Amazon foi Cadabra. Fazendo uma associação com abracadabra por ter uma magia nos livros!
@@ -60,6 +68,11 @@ Na prática, isso funciona através de um sistema de pagamento flexível onde vo
 
 Além disso, a AWS oferece uma ampla gama de serviços para atender diferentes necessidades. Você encontra desde serviços básicos como computação e armazenamento de dados, passando por bancos de dados gerenciados, até soluções mais avançadas e especializadas como machine learning, Internet das Coisas (IoT) e análise de grandes volumes de dados. Essa diversidade permite que empresas de qualquer tamanho encontrem soluções adequadas para seus projetos específicos.
 
+<p align="center">
+    <img src="../imagens/capex-opex.png" width="311" height="311" alt="capex-opex">
+</p>
+
+
 ---
 
 ### ⇨ Nuvem Pública, Híbrida e Privada
@@ -70,12 +83,17 @@ A nuvem privada é uma infraestrutura de computação dedicada exclusivamente a 
 
 A nuvem híbrida combina o melhor dos dois mundos: integra recursos da nuvem pública com a infraestrutura privada existente. Isso permite que as empresas mantenham dados críticos e sistemas sensíveis na nuvem privada, enquanto aproveitam a escalabilidade e economia da nuvem pública para outras aplicações. É especialmente útil para empresas em transição ou com demandas variáveis de processamento.
 
+
 ---
 
 
 ### ⇨ Modelos de Computação na Nuvem
 
 Existem três modelos principais de serviços em nuvem: IaaS, PaaS e SaaS. Cada um oferece um nível diferente de controle e responsabilidade para o usuário.
+
+<p align="center">
+    <img src="../imagens/servicos-em-nuvem.png" width="490" height="308" alt="image">
+</p>
 
 **IaaS (Infrastructure as a Service)** fornece os recursos básicos de infraestrutura como servidores virtuais, armazenamento e redes. O provedor de nuvem cuida da parte física, mas você é responsável por configurar e gerenciar tudo que está em cima disso, incluindo sistemas operacionais, aplicações e dados. É ideal para quando você quer migrar sistemas já existentes ou construir algo do zero.
 
@@ -95,17 +113,11 @@ Existem três modelos principais de serviços em nuvem: IaaS, PaaS e SaaS. Cada 
 
 Ao criar uma conta **CLOUD**, a conta principal (**root**) tem permissões administrativas completas para gerenciar o workspace.
 
----
-
 ### 🔻   Autenticação Multifator (MFA)
 A **autenticação multifator (MFA)** é uma camada adicional de segurança para proteger a conta, exigindo mais de uma forma de verificação durante o login.
 
----
-
 **Como habilitar a MFA?**  
 Ativar a MFA nas configurações de segurança da sua conta. Além disso, é possível criar uma **conta administrativa separada** do usuário root, garantindo maior controle e segurança no gerenciamento do workspace.
-
----
 
 ### 🔹 Tipos de contas
 - **Conta raiz (root):** Tem privilégios absolutos
@@ -137,12 +149,18 @@ O professor apresenta de forma concisa todos os campos do site e explica a funç
 [Console Lambda AWS](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/functions)
 
 - A **região mais cara** é o Brasil, enquanto o **Norte da Virgínia** é a mais barata; vamos utilizar o Norte da Virgínia.
+  
+<img src="../imagens/norte-da-virginia.png" width="211" height="111" alt="norte-da-virginia">  
+  
 - O site da AWS é personalizável: cor da tela, idioma, notificações e **CloudShell** (também podemos criar recursos via portal, AWS SDK ou CloudShell).
 
 ---
 
 ### ⇨ O que é um IAM - Usuários da conta
 - **Console AWS:** Página inicial da AWS com informações gerais
+  
+<img src="../imagens/console-aws.png" width="490" height="308" alt="console-aws">   
+
 - **Interface CLI:** Permite criar comandos para criar recursos
 - **CloudShell:** Alternativa para criar e gerenciar recursos via navegador
 
@@ -153,6 +171,8 @@ O professor apresenta de forma concisa todos os campos do site e explica a funç
 - CLI
 - CloudShell
 
+<img src="../imagens/aws-cloud.png" width="490" height="308" alt="aws-cloud">   
+
 ---
 
 ### ⇨ Acesso ao AWS CLI e Criação de Grupos de Usuários
@@ -161,9 +181,13 @@ Os erros que estavam aparecendo eram porque o usuário **ADM** não tinha as per
 Não foi necessário criar uma permissão em JSON, pois a permissão que eu precisava era de **acesso total**, como ADM. Como ela já constava na lista da AWS junto com outras permissões, apliquei-a como permissão direta.  
 Os erros foram resolvidos e agora tenho **acesso total à conta ADM**, sem precisar acessar a conta root toda hora.
 
+<img src="../imagens/aws-page.png" width="900" height="408" alt="aws-page">
+
 [Documentação oficial AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html)
 
 O professor diz que precisamos criar uma **chave de acesso para o CLI**, mas não explica detalhadamente. Ele generaliza, dizendo que pode ser qualquer número. Vamos ter um milhão de senhas e ele não esclarece do que se trata.
+
+<img src="../imagens/comocriaregerenciarusuarios.png" width="490" height="308" alt="comocriaregerenciarusuarios">
 
 ---
 
@@ -186,12 +210,16 @@ Não é recomendado.
 - A **conta root** é a conta principal da AWS, com acesso ilimitado a tudo. Usar essa conta para CLI é perigoso, pois qualquer erro pode afetar toda a conta.
 - O ideal é criar um **usuário IAM** com permissões específicas (por exemplo, admin ou apenas S3, EC2, etc.) e gerar a chave de acesso para ele.
 
----
+<p align="center">
+<img src="../imagens/iam.png" width="211" height="111" alt="iam">
+</p>
 
 **Resumo:**
 - CLI = precisa de chave para autenticação
 - Root = usar apenas para configurações críticas
 - Usuário IAM = gerar chave e trabalhar de forma segura
+
+
 
 ---
 
@@ -199,6 +227,9 @@ Não é recomendado.
 - Criei os grupos e subi a permissão conforme cada setor, além da permissão para alterar a própria senha.
 - O professor cria uma pasta com todas as atividades; antes de enviar pelo Git Bash, é necessário ter essa pasta.
 - Ao todo, são 20 usuários, e o envio é feito de uma só vez.
+
+<img src="../imagens/1pratica.png" width="900" height="308" alt="1pratica">
+
 
 ---
 
