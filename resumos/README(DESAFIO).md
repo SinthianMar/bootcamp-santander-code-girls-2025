@@ -71,6 +71,7 @@ Você escolhe qual sistema operacional quer rodar.
   <img src="../imagens/instancia.png" width="340" height="260" alt="instancia">
 </p>
 
+
 **Exemplos:**
 
 - t2.micro = pequeno (1 processador, 1GB RAM) - barato
