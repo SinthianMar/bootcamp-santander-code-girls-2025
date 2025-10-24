@@ -6,99 +6,139 @@
 
 ## 🌐 Jornada AWS Cloud
 
-### Fase 1 - Fundamentos da Nuvem
+### Fase 1 - Introdução à AWS e Conceitos Básicos
+
 > Onde tudo começa: a história da Amazon, os conceitos de Cloud Computing e o primeiro contato com o ecossistema AWS.
 
-- História da Amazon & AWS
-- Fundamentos de Cloud Computing
-- Regiões, Zonas de Disponibilidade e Infraestrutura Global
-- Modelos de Serviço (IaaS, PaaS, SaaS)
-- IAM e segurança básica
-
-[Ver resumo completo](./resumos/fundamentos-da-nuvem.md)
+- Introdução à AWS e Conceitos Básicos [Ver resumo](./resumos/conceitos-basicos.md)
+- Introdução à AWS e ao Universo da Computação em Nuvem  [Ver resumo](./resumos/computação-na-nuvem.md)
+- Fundamentos Essenciais da Infraestrutura AWS  [Ver resumo](./resumos/infraestrutura.md)
+- Configurando sua Conta AWS com Segurança e Eficiência  [Ver resumo](./resumos/configurando-a-conta.md)
+- Primeiros Passos com Acesso Seguro e Controle de Custos na AWS [Ver resumo](./resumos/acesso-seguro.md)
 
 ---
 
-### Fase 2 - Computação e Recursos
+### Fase 2 - Computação na Nuvem com EC2
+
 > Dando vida à nuvem: criação e gerenciamento de instâncias, configurações e automações básicas com EC2.
 
-- Amazon EC2 e Elastic IP
-- Launch Templates e Auto Scaling
-- Elastic Load Balancing
-- Prática: criando recursos na AWS
-
-[Ver resumo completo](./resumos/ec2.md)
+- Entendendo as Instâncias EC2 e a Otimização de Recursos na AWS [Ver resumo](./resumos/gerenciando-instâncias.md)
+- Armazenamento na Nuvem com Amazon EBS e S3 [Ver resumo](./resumos/armazenamento-na-nuvem.md)
+- Gerenciando Instâncias EC2 na AWS [Ver resumo](./resumos/gerenciando-instâncias.md)
 
 ---
 
-### Fase 3 - Armazenamento e Banco de Dados
+### Fase 3 - Criando Recursos na AWS
+
 > Guardando o essencial: os serviços de armazenamento e banco de dados que sustentam o coração das aplicações na AWS.
 
-- Amazon S3, Glacier e EFS
-- Armazenamento em camadas e versionamento
-- RDS, DynamoDB e Aurora
-- CDN com CloudFront
-
-[Ver resumo completo](./resumos/armazenamento-bd.md)
+- Criando sua Primeira Instância Amazon EC2 [Ver resumo]()
+- Criando seu Primeiro Bucket no Amazon S3 [Ver resumo]()
+- Criando sua Primeira Função com Amazon Lambda [Ver resumo]()
+- Desafios de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional [Ver resumo]()
+- Associando Conceitos de Recursos da AWS [Ver resumo]()
 
 ---
 
-### Fase 4 - Redes e Comunicação
+### Fase 4 - Redes na AWS
+
 > Conectando os mundos: como a AWS integra e isola ambientes através de redes seguras e escaláveis.
 
-- VPC, Subnets e Route Tables
-- Internet Gateway e NAT
-- Route 53 e DNS
-- Segurança de rede e monitoramento
-
-[Ver resumo completo](./resumos/redes.md)
+- Introdução à Amazon VPC [Ver resumo]()
+- Entendendo o que é uma Subnet na Amazon VPC [Ver resumo]()
+- Introdução ao Security Group na AWS [Ver resumo]()
+- Explorando os Fundamentos do Route 53 na AWS [Ver resumo]()
+- Introdução à Distribuição de Conteúdo com Amazon CloudFront [Ver resumo]()
+- Entendendo o que é o Amazon Elastic Load Balancer [Ver resumo]()
 
 ---
 
-### Fase 5 - Gerenciamento e Governança
+### Fase 5 - Banco de Dados na AWS
+
 > Controlando o império: monitoramento, auditoria e boas práticas para manter a nuvem saudável e sob controle.
 
-- CloudWatch e métricas
-- CloudTrail e auditoria
-- AWS Config e Budgets
-- Trusted Advisor e boas práticas
-
-[Ver resumo completo](./resumos/governanca.md)
+- Entendendo o que é o Amazon RDS
+- Introdução ao Amazon DynamoDB
+- Explorando Estratégias de Backup e Recuperação de Dados na AWS
 
 ---
 
-### Fase 6 - Segurança e Identidade
+### Fase 6 - Serviços de Armazenamento e CDN
+
 > A fortaleza da nuvem: políticas, acessos e criptografia como pilares de uma arquitetura segura.
 
-- IAM, MFA e Políticas
-- AWS KMS e Secrets Manager
-- Responsabilidade compartilhada
-- Compliance e boas práticas
-
-[Ver resumo completo](./resumos/seguranca.md)
+- Introdução ao Amazon S3
+- Conhecendo o Amazon Glacier
+- Entendendo a Distribuição de Conteúdo com Amazon CloudFront
+- Associando Conceitos de Serviços de Armazenamento e CDN
 
 ---
 
-### Fase 7 - Automação, DevOps e Ferramentas
+### Fase 7 - Serviços Intermediários e Avançados
+
 > O ápice da jornada: unindo automação, integração contínua e inovação com as ferramentas da AWS.
 
-- AWS CLI e SDKs
-- CloudFormation e Terraform
-- AWS Lambda e Serverless
-- CI/CD e Integrações
+- Entendendo como Funciona o AWS Lambda
+- Entendendo o que são Amazon ECS e EKS na Orquestração de Containers
+- Entendendo como Funcionam o Amazon SNS e SQS na Comunicação Assíncrona
+- Explorando Workflows Automatizados com AWS Step Functions
 
-[Ver resumo completo](./resumos/devops.md)
+---
+
+### Fase 8 - Gerenciamento e Governança na AWS
+
+> ...
+
+- Entendendo o que é o AWS CloudWatch
+- Fundamentos do AWS CloudTrail para Auditoria e Segurança na AWS
+- Implementando sua Primeira Stack com AWS CloudFormation
+- Gerenciando Usuários e Permissões na AWS com Identity and Access Management (IAM)
+- Entendendo e Gerenciando Policies e Roles na AWS
+
+---
+
+### Fase 9 - Segurança na AWS
+
+> ...
+
+- Explorando Práticas Recomendadas de Segurança na Nuvem
+- Entendendo a Criptografia de Dados na AWS
+- Protegendo Aplicações Web com AWS WAF
+
+---
+
+### Fase 10 - Desenvolvimento e Ferramenta
+
+> ...
+
+- Explorando como Funcionam a AWS CLI e os SDKs
+- Implementando Infraestrutura Automatizada com AWS CloudFormation
+- Automatizando Implantação de Aplicações com AWS CodeDeploy
+
+---
+
+### Fase 11 - Automação e DevOps na AWS
+
+> ...
+
+- Explorando Automatização de Tarefas na AWS
+- Executando Tarefas Automatizadas com Lambda Function e S3
+- Infraestrutura como Código na AWS com Terraform
+- Introdução ao DevOps
+- Aplicando Conceitos de DevOps na AWS
+- Explorando Ferramentas da AWS para DevOps
 
 ---
 
 ## Desafios e Laboratórios
 
-| Nº | Desafio | Link | Status |
-|----|----------|------|--------|
-| 1 | Gerenciamento de Instâncias EC2 | [Acessar repositório]() | ✅ Concluído |
-| 2 | Armazenamento com Amazon S3 | [Acessar repositório]() | 🔄 Em andamento |
-| 3 | Automação com AWS Lambda | [Acessar repositório]() | ⏳ A iniciar |
-| 4 | Projeto Final AWS | — | ⏳ A iniciar |
+
+| Nº | Desafio                          | Link                                                | Status          |
+| --- | -------------------------------- |-----------------------------------------------------| --------------- |
+| 1   | Gerenciamento de Instâncias EC2 | [Acessar repositório](./resumos/README(DESAFIO).md) | ✅ Concluído   |
+| 2   | Armazenamento com Amazon S3      | [Acessar repositório]()                             | 🔄 Em andamento |
+| 3   | Automação com AWS Lambda       | [Acessar repositório]()                             | ⏳ A iniciar    |
+| 4   | Projeto Final AWS                | —                                                   | ⏳ A iniciar    |
 
 ---
 
@@ -120,7 +160,6 @@
 ┃ ┗ (prints, diagramas, etc)
 ┗ README.md
 ```
-
 
 ---
 
