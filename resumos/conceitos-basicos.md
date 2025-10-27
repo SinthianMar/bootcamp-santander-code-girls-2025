@@ -25,7 +25,7 @@ internet quando precisa. A AWS é a maior provedora de computação em nuvem do 
 
 ---
 
-## 📦 História da Amazon
+## História da Amazon
 
 A Amazon foi fundada pelo Jeff Bezos, estava na moda a criação de sites pela internet e então ele teve uma grande ideia, uma <ins>livraria online!</ins>
 Logo, iniciou o projeto de livraria online em 1994. O escritório era em sua garagem, localizada em Seattle, Washington. O site foi lançado oficialmente em 1995!
@@ -35,7 +35,7 @@ Logo, iniciou o projeto de livraria online em 1994. O escritório era em sua gar
 </p>
 
 <p align="center">
-    📚 A loja de tudo: Jeff Bezos e a era da Amazon
+    A loja de tudo: Jeff Bezos e a era da Amazon
 </p>
 
 ### 🔹 Curiosidades!
@@ -45,7 +45,7 @@ Logo, iniciou o projeto de livraria online em 1994. O escritório era em sua gar
 
 ---
 
-## ☁️ História da AWS
+## História da AWS
 
 A Amazon começou desenvolvendo soluções de tecnologia para gerenciar seus próprios recursos de computação durante os anos 2000. Percebendo que essas ferramentas internas poderiam ser úteis para outras empresas, a companhia decidiu transformar essa expertise em um serviço comercial. Em 2006, lançou oficialmente a AWS com serviços como o S3 para armazenamento de dados e o EC2 para processamento, criando assim uma plataforma completa de computação em nuvem. O grande diferencial foi o modelo de pagamento por uso, onde os clientes só desembolsam pelo que realmente consomem, o que representou uma inovação importante no mercado da época.
 
