@@ -2,7 +2,7 @@
 
 ---
 
-### Implementando sua Primeira Stack com AWS CloudFormation
+## Implementando sua Primeira Stack com AWS CloudFormation
 
 A aula abordou o AWS CloudFormation, ferramenta nativa da AWS voltada à automação da criação e gerenciamento de recursos em nuvem. O instrutor apresentou o conceito de Infraestrutura como Código (IaC), destacando como o CloudFormation permite construir e versionar infraestruturas complexas por meio de templates JSON ou YAML.
 
