@@ -1,12 +1,8 @@
-### Code girls -AWS
+### 1º Desafio DIO – Computação na Nuvem com EC2 | AWS Cloud Foundations
 
 ---
 
-## MÓDULO 2: Computação na Nuvem com EC2
-
----
-
-### 1. Entendendo as Instâncias EC2 e a Otimização de Recursos na AWS
+## Computação na Nuvem com EC2
 
 EC2 é o serviço de computação da AWS. Se você precisa de um computador na nuvem, você usa EC2. Simples assim. Mas o desafio real é escolher o tipo certo de computador e não gastar uma fortuna mantendo máquinas que não está usando.
 
