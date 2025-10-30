@@ -130,15 +130,16 @@
 
 ---
 
-## Desafios e Laboratórios
+## Desafios 
 
 
-| Nº | Desafio                          | Link                                                | Status          |
-| --- | -------------------------------- |-----------------------------------------------------| --------------- |
-| 1   | Gerenciamento de Instâncias EC2 | [Acessar repositório](./resumos/README(DESAFIO).md) | ✅ Concluído   |
-| 2   | Armazenamento com Amazon S3      | [Acessar repositório]()                             | 🔄 Em andamento |
-| 3   | Automação com AWS Lambda       | [Acessar repositório]()                             | ⏳ A iniciar    |
-| 4   | Projeto Final AWS                | —                                                   | ⏳ A iniciar    |
+| Nº | Desafio                         | Link                                             | Status          |
+|----|---------------------------------|--------------------------------------------------| --------------- |
+| 1  | Gerenciamento de Instâncias EC2 | [Acessar repositório](./resumos/Desafio1_ComputacaoNaNuvem_EC2.md) | ✅ Concluído   |
+| 2  | AWS Step Functions              | [Acessar repositório](./resumos/Desafio2_StepFunctions.md) | ✅ Concluído |
+| 3  |                                 | [Acessar repositório]()                          | 🟡 Em progresso  |
+| 4  |                                 |  [Acessar repositório]()                         | 🔴 Não iniciado   |
+| 5  |                                 |  [Acessar repositório]()                         | 🔴 Não iniciado   |
 
 ---
 
