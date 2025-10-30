@@ -24,7 +24,7 @@
 
 - Entendendo as Instâncias EC2 e a Otimização de Recursos na AWS [Ver resumo](./resumos/gerenciando-instâncias.md)
 - Armazenamento na Nuvem com Amazon EBS e S3 [Ver resumo](./resumos/armazenamento-na-nuvem.md)
-- Gerenciando Instâncias EC2 na AWS [Ver resumo](./resumos/gerenciando-instâncias.md)
+- Gerenciando Instâncias EC2 na AWS [Ver resumo](./resumos/Desafio1_ComputacaoNaNuvem_EC2.md)
 
 ---
 

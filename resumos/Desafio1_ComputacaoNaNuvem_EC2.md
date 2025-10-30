@@ -2,278 +2,12 @@
 
 ---
 
-## Computação na Nuvem com EC2
-
-EC2 é o serviço de computação da AWS. Se você precisa de um computador na nuvem, você usa EC2. Simples assim. Mas o desafio real é escolher o tipo certo de computador e não gastar uma fortuna mantendo máquinas que não está usando.
-
----
-
-### Sumário
-
-- Amazon EC2
-- Criando uma Instância EC2
-- Otimização: O Grande Desafio
-- Modelos de Precificação do EC2
-- Amazon EBS
-- Amazon S3
-- Classes de armazenamento do S3
-- Gerenciamento de arquivos (EC2 + EBS)
-- Gerenciamento de arquivos (S3 + Lambda)
-- 1 - Diagrama: Repositório de Documentos do Bootcamp (EC2 + EBS)
-- 2 - Diagrama: Foto 3x4 Serverless (S3 + Lambda)
-- Conclusão
-- Referências
-
----
-
-### Amazon EC2
-
-Instâncias EC2 são máquinas virtuais na AWS, que podem rodar Windows ou Linux, e seguem o
-modelo IaaS, a gente gerencia a infraestrutura como serviço, cuidando dos apps, dados e conexões,
-enquanto a AWS cuida do resto. Cada uma tem CPU, memória, disco, rede e SO. Para escolher a
-ideal para uma aplicação, o foco é na eficiência, escalabilidade e economia, entendendo bem o que
-o app precisa para não desperdiçar recursos.
-
-<p align="center">
-  <img src="../imagens/ec2.png" width="640" height="360" alt="ec2">
-</p>
-
----
-
-### Criando uma Instância EC2
-
-Quando você cria uma instância, você precisa escolher:
-
-1. **AMI (Amazon Machine Image)**
-   É a "receita" da máquina. Tipo um molde.
-
-<p align="center">
-  <img src="../imagens/ami.png" width="540" height="360" alt="ami">
-</p>
-
-**Exemplos de AMIs:**
-
-- Ubuntu 20.04
-- Windows Server 2022
-- Amazon Linux
-- Imagens customizadas
-
-Você escolhe qual sistema operacional quer rodar.
-
-2. **Tipo de Instância**
-   Escolher o "tamanho" da máquina.
-
-<p align="center">
-  <img src="../imagens/instancia.png" width="340" height="260" alt="instancia">
-</p>
-
-
-**Exemplos:**
-
-- t2.micro = pequeno (1 processador, 1GB RAM) - barato
-- t2.small = pequeno-médio (1 processador, 2GB RAM)
-- m5.large = médio (2 processadores, 8GB RAM)
-- c5.xlarge = grande para processamento (4 processadores, 8GB RAM)
-
-Quanto maior, mais caro.
-
-3. **Security Group**
-   É o firewall da máquina. Você escolhe quem pode acessar.
-
-**Exemplo:**
-
-- "Porta 80 (HTTP) aberto para o mundo" (qualquer um acessa)
-- "Porta 22 (SSH) aberto só para meu IP" (só eu entro de forma segura)
-- "Porta 443 (HTTPS) aberto para o mundo"
-- "Banco de dados na porta 3306 fechado" (ninguém acessa de fora)
-
----
-
-### Otimização: O Grande Desafio
-
-Otimizar = gastar menos mantendo a mesma performance (ou melhorando!).O problema real: Muitas empresas criam servidores para um projeto, o projeto termina, mas o
-servidor continua rodando. E pagando. E pagando. E pagando...Resultado: conta gigante no fim do mês.
-
-1. **Desliga máquinas não usadas**
-
-- Servidor de teste que só usa de segunda a sexta?
-  - Desliga toda sexta à noite
-  - Liga toda segunda de manhã
-- Servidor de desenvolvimento parado no fim de semana?
-  - Desliga
-
-Menos horas rodando = menos dinheiro
-
-2. **Elimina recursos ociosos**
-   Tipo alugar uma van de 50 lugares para levar 2 pessoas. Desperdício!
-   Se você tem 10 servidores mas só usa 3, apaga os 7 que não usa.
-3. **Escala inteligente**
-   Existem dois tipos:
-
-**Escalabilidade Vertical:**
-
-- Aumentar recursos na mesma máquina
-- Exemplo: passar de 2GB RAM para 8GB RAM
-- Mais poder no mesmo servidor
-
-**Escalabilidade Horizontal:**
-
-- Adicionar mais máquinas
-- Exemplo: passar de 1 servidor para 5 servidores
-- Distribuir carga entre vários
-
----
-
-### Modelos de Precificação do EC2
-
-<p align="center">
-  <img src="../imagens/precificacao.png" width="440" height="360" alt="precificacao">
-</p>
-
-#### On-Demand (Sob Demanda)
-
-Pague apenas pelas horas utilizadas, sem compromissos.
-
-**Quando usar:** Workloads imprevisíveis, testes, projetos novos, aplicações que rodam
-esporadicamente.
-**Vantagens:** Flexibilidade total, sem compromisso.
-**Desvantagens:** Custo por hora mais alto.
-
-#### Reserved Instances (Reservadas)
-
-Comprometa-se por 1 ou 3 anos e ganhe até 60% de desconto.
-
-**Quando usar:** Aplicações rodando 24/7, produção estável, demanda previsível.
-**Vantagens:** Economia substancial.
-**Desvantagens:** Pagamento antecipado obrigatório, perda do investimento se não usar.
-
-#### Spot Instances (Spot)
-
-Aproveite capacidade ociosa com até 90% de desconto, mas a AWS pode interromper com 2
-minutos de aviso.
-
-**Quando usar:** Processamento batch, análise de dados, tarefas tolerantes a interrupções.
-**Vantagens:** Custo extremamente baixo.
-**Desvantagens:** Pode ser interrompido pela AWS a qualquer momento.
-
----
-
-### Elastic IP
-
-Instâncias EC2 recebem IPs públicos que mudam a cada reinicialização.
-Elastic IP é um endereço fixo que você pode associar à sua instância, mantendo o mesmo IP
-independente de paradas ou reinicializações.
-
----
-
-### Otimização de Custos
-
-Instâncias não precisam rodar 24/7. Você pode desligá-las quando não estiver usando, programar
-horários automáticos, ou usar Auto Scaling para ajustar capacidade dinamicamente.
-
-<p align="center">
-  <img src="../imagens/calculadora.png" width="440" height="360" alt="calculadora">
-</p>
-
----
-
-## 2. Armazenamento na Nuvem com Amazon EBS e S3
-
-### Amazon EBS: O "HD Externo" da Nuvem
-
-<p align="center">
-  <img src="../imagens/ebs.png" width="440" height="260" alt="ebs">
-</p>
-
-EBS (Elastic Block Store) funciona como um disco rígido que você conecta à sua instância EC2,
-oferecendo armazenamento em bloco persistente e configurável.
-
-Recursos principais: Você pode redimensionar o volume em tempo real, criar snapshots para
-backup, ativar criptografia e anexar múltiplos volumes à mesma instância.
-
-Tipos disponíveis: Os volumes gp2/gp3 atendem aplicações gerais, enquanto io1/io2 são
-otimizados para cargas de trabalho que exigem altíssima performance e IOPS.
-
-Limitações: Um volume EBS está vinculado a uma única instância e zona de disponibilidade. Se a
-instância falhar, o acesso ao volume fica temporariamente indisponível até que seja reanexado.
-
-Persistência: Os dados permanecem no volume mesmo após desligar a instância, diferente do
-armazenamento efêmero (instance store). Porém, falhas no volume sem snapshots podem resultar
-em perda de dados.
-
-<p align="center">
-  <img src="../imagens/snapshots.png" width="440" height="260" alt="snapshots">
-</p>
-
----
-
-### Amazon S3: O Armazém Infinito
-
-<p align="center">
-  <img src="../imagens/s3.png" width="240" height="180" alt="snapshots">
-</p>
-
-S3 (Simple Storage Service) é o serviço de armazenamento de objetos da AWS para guardar
-qualquer tipo de arquivo - fotos, vídeos, documentos, backups, logs - com capacidade praticamente
-ilimitada.
-
-<p align="center">   
-  <img src="../imagens/d2.png" width="540" height="160" alt="d2">
-</p>
-
-Como funciona: Você organiza arquivos em buckets (containers) e pode acessá-los de qualquer
-lugar via HTTP/HTTPS. Cada objeto pode ter até 5TB de tamanho.
-
-Durabilidade e disponibilidade: Projetado para 99.999999999% (11 noves) de durabilidade,
-replicando automaticamente seus dados entre múltiplas zonas de disponibilidade.
-
-Flexibilidade: Oferece diferentes classes de armazenamento para otimizar custos conforme a
-frequência de acesso, desde dados "quentes" (acesso frequente) até arquivamento de longo prazo.
-
-Casos de uso: Hospedagem de sites estáticos, data lakes, backup e disaster recovery,
-armazenamento de mídia, distribuição de conteúdo.
-
-Diferenças:
-![tabela.png](../imagens/tabela.png)
-------------------------------------
-
-### Classes de Armazenamento do S3
-
-<p align="center">
-  <img src="../imagens/Classes.png" width="740" height="260" alt="snapshots">
-</p>
-
-O S3 oferece diferentes classes de armazenamento, cada uma otimizada para padrões específicos
-de acesso e com preços variados conforme a frequência de uso dos seus dados.
-
-**Standard**
-Classe padrão para dados acessados frequentemente, com disponibilidade imediata e sem taxas de
-recuperação.
-
-**Standard-IA (Infrequent Access)**
-Destinada a dados raramente acessados, oferece armazenamento mais barato que o Standard, mas
-cobra uma taxa sempre que você recupera os dados.
-
-**One Zone-IA**
-Similar ao Standard-IA, porém armazena os dados em somente uma zona de disponibilidade ao
-invés de múltiplas, reduzindo custos, mas aumentando o risco de perda em caso de falha na zona.
-
-**Glacier**
-Projetada para arquivamento de longo prazo com custo muito baixo de armazenamento, mas o
-tempo de recuperação dos dados é medido em horas.
-
-**Deep Archive**
-A opção mais econômica para retenção de dados de longuíssimo prazo que raramente (ou nunca)
-precisam ser acessados, com tempo de recuperação ainda maior que o Glacier.
-
-**Lifecycle**
-Regras automáticas que você configura para transicionar objetos entre classes de armazenamento
-ou deletá-los após períodos específicos, eliminando a necessidade de gerenciamento manual e
-otimizando custos conforme o ciclo de vida dos seus dados.
-
-<p align="center">
-  <img src="../imagens/periodos.png" width="640" height="160" alt="snapshots">
-</p>
+## Gerenciando Instâncias EC2 na AWS
+
+Este documento explora arquiteturas AWS para gerenciamento de arquivos e documentos,
+destacando soluções com EC2/EBS para processamento persistente e S3/Lambda para abordagens
+serverless, inspiradas em cenários reais como repositórios de bootcamp e redimensionamento de
+fotos.
 
 ---
 
@@ -303,7 +37,7 @@ O sistema de arquivos manda o arquivo para o S3 usando linha de comando ou trans
 Lambda pega esse arquivo, processa e joga no banco de dados.
 
 <p align="center">
-  <img src="../imagens/img_1.png" width="540" height="460" alt="img1">
+  <img src="../imagens/img_1.png" width="540" height="360" alt="img">
 </p>
 
 ---
@@ -334,7 +68,7 @@ gerencia os documentos de estudo do bootcamp e guarda esses dados.
    de estudo do bootcamp de forma persistente
 
 <p align="center">
-  <img src="../imagens/img_2.png" width="640" height="460" alt="img2">
+  <img src="../imagens/img_2.png" width="540" height="360" alt="img">
 </p>
 
 ---
@@ -361,28 +95,24 @@ automaticamente a imagem para o formato 3x4? Foi assim que surgiu a ideia para e
 6. S3 Saída - Armazena a foto final em formato 3x4
 7. SNS/SES - Envia email/SMS para o cliente com um link para baixar a foto processada
 
-![img_3.png](../imagens/img_3.png)
+<p align="center">
+  <img src="../imagens/img_3.png" width="640" height="460" alt="img">
+</p>
 
 ---
 
 ### Conclusão
 
-- EC2 é poderoso mas exige disciplina. Escolha a instância certa, monitore seus custos, desliga o que não usa. O maior vilão de contas altas na AWS é "máquina esquecida rodando por meses".
-- EBS é seu HD externo rápido. S3 é seu armazém infinito. Use EBS para dados que precisa de acesso rápido (bancos de dados, sistema operacional). Use S3 para arquivos e backups, aproveitando as classes de armazenamento para economizar.
-- As arquiteturas AWS com EC2/EBS e S3/Lambda oferecem escalabilidade, automação e eficiência para gerenciamento de arquivos, ideais para processamento persistente ou serverless em escala.
+As arquiteturas AWS com EC2/EBS e S3/Lambda oferecem escalabilidade, automação e eficiência para
+gerenciamento de arquivos, ideais para processamento persistente ou serverless em escala.
 
 ---
 
 ### Referências
 
-- AWS EC2 Pricing: https://aws.amazon.com/ec2/pricing/
-- AWS EC2 Documentation: https://docs.aws.amazon.com/ec2/
-- AWS EBS: https://aws.amazon.com/ebs/
-- AWS S3: https://aws.amazon.com/s3/
-- S3 Storage Classes: https://aws.amazon.com/s3/storage-classes/
 - Amazon EC2: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html
 - Amazon EBS: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html
 - Amazon S3: https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html
 - AWS Lambda: https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
 
-Documento: [DESAFIO.pdf](../materiais-de-apoio/DESAFIO.pdf)
+Documento: [o-gerenciando-instancias-ec2-na-aws.pdf](../materiais-de-apoio/o-gerenciando-instancias-ec2-na-aws.pdf)
