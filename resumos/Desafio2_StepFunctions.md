@@ -37,7 +37,7 @@ A aula aborda conceitos essenciais de serviços serverless e de orquestração n
 
 Serviço serverless para execução de pequenas funções sob demanda.
 Suporte a diversas linguagens: Java, .NET, Node.js, entre outras.
-Ideal para tarefas pequenas e escaláveis — não indicado para grandes processamentos.
+Ideal para tarefas pequenas e escaláveis. Não indicado para grandes processamentos.
 
 ![img_3.png](../imagens/img_3.png)
 
