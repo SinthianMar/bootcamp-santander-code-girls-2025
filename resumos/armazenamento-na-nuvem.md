@@ -10,17 +10,6 @@ Cada um é bom para um uso diferente.
 
 ---
 
-### Sumário
-
-- Amazon EBS
-- Amazon S3
-- Classes de armazenamento do S3
-- Questões
-- Conclusão
-- Referências
-
----
-
 ### Amazon EBS: O "HD Externo" da Nuvem
 
 <p align="center">
@@ -119,47 +108,6 @@ otimizando custos conforme o ciclo de vida dos seus dados.
 
 ---
 
-### Questões
-
-1. Qual é a diferença entre EBS e S3?
-
-   - [ ]  Nenhuma, são o mesmo
-   - [X]  EBS é disco preso a EC2; S3 é armazenamento de objetos massivo
-   - [ ]  EBS é barato; S3 é caro
-   - [ ]  S3 só funciona em uma região
-2. Qual classe S3 é mais barata?
-
-   - [ ]  Standard
-   - [ ]  Glacier
-   - [ ]  Standard-IA
-   - [X]  Deep Archive
-3. O Lifecycle do S3 pode automaticamente mover arquivos?
-
-   - [ ]  Não, precisa ser manual
-   - [X]  Sim, você configura regras
-   - [ ]  Só funciona em Standard
-   - [ ]  Custa extra para ativar
-4. Se você deletar um arquivo em S3 sem versionamento, o que acontece?
-
-   - [ ]  Volta automaticamente
-   - [X]  É deletado para sempre
-   - [ ]  Fica em backup automático
-   - [ ]  Você consegue recuperar em 30 dias
-5. Quando usar Glacier?
-
-   - [ ]  Para dados que acessa todo dia
-   - [X]  Para arquivamento de longo prazo com acesso raro
-   - [ ]  Para todos os arquivos (é o mais barato)
-   - [ ]  Nunca
-6. Um volume EBS pode ser compartilhado entre 2 EC2s?
-
-   - [ ]  Sim, sempre
-   - [X]  Não, um EBS fica preso a uma instância
-   - [ ]  Sim, mas custa extra
-   - [ ]  Sim, com Multi-Attach em alguns tipos
-
----
-
 ### Conclusão
 
 EBS é seu HD externo rápido. S3 é seu armazém infinito. Use EBS para dados que precisa de
@@ -174,4 +122,4 @@ aproveitando as classes de armazenamento para economizar.
 - AWS S3: [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
 - S3 Storage Classes: [https://aws.amazon.com/s3/storage-classes/](https://aws.amazon.com/s3/storage-classes/)
 
-Documento:[o-armazenamento-na-nuvem-com-amazon-ebs-e-s3.pdf](../materiais-de-apoio/o-armazenamento-na-nuvem-com-amazon-ebs-e-s3.pdf)
+---

@@ -9,19 +9,6 @@ proteger sua conta desde o início.
 
 ---
 
-### Sumário
-
-- Criando sua primeira conta
-- Conta Root vs Conta IAM
-- MFA (Autenticação com 2 fatores)
-- Boas práticas de segurança
-- Como acessar a AWS
-- Questões
-- Conclusão
-- Referências
-
----
-
 ### Criando sua primeira conta
 
 **Conta Root: A "Chave Mestre"**
@@ -196,34 +183,6 @@ Um terminal direto no site da AWS. Sem instalar nada.
 
 Dica: O professor diz que o site da AWS é personalizável. Você pode mudar cores, idioma,
 notificações. Explore!
-
----
-
-### Questões
-
-1. Sobre o controle de custos na AWS, é correto afirmar:
-
-   - [ ]  Só é possível ver os custos após o fechamento do mês
-   - [X]  É possível definir múltiplos alertas para diferentes valores do orçamento
-   - [ ]  Apenas serviços em produção geram alertas
-   - [ ]  Os alertas só notificam após ultrapassar o orçamento
-2. A AWS permite criar e gerenciar grupos de usuários para facilitar o
-
-   - [ ]  Falso
-   - [X]  Verdadeiro
-3. O que permite o AWS CloudShell?
-
-   - [ ]  Gerar orçamento mensal de custos
-   - [ ]  Alterar a senha da conta root
-   - [X]  Executar comandos e scripts diretamente pelo navegador, sem instalação local
-   - [ ]  Apenas acessar documentação da AWS
-4. O que significa o termo IAM na AWS?
-
-   - [ ]  Instance Automated Monitoring
-   - [X]  Identity and Access Management
-   - [ ]  Internet Application Manager
-   - [ ]  ntegrated Account Module
-
 ---
 
 ### Conclusão
@@ -241,4 +200,4 @@ MFA e seguir as boas práticas garante que sua conta fica segura.
 - https://aws.amazon.com/iam/
 - https://docs.aws.amazon.com/security/
 
-Documento: [o-configurando-sua-conta-aws-com-seguranca-e-eficiencia.pdf](../materiais-de-apoio/o-configurando-sua-conta-aws-com-seguranca-e-eficiencia.pdf)
+---

@@ -11,9 +11,9 @@
 > Onde tudo começa: a história da Amazon, os conceitos de Cloud Computing e o primeiro contato com o ecossistema AWS.
 
 - Introdução à AWS e Conceitos Básicos [Ver resumo](./resumos/conceitos-basicos.md)
-- Introdução à AWS e ao Universo da Computação em Nuvem  [Ver resumo](./resumos/computação-na-nuvem.md)
-- Fundamentos Essenciais da Infraestrutura AWS  [Ver resumo](./resumos/infraestrutura.md)
-- Configurando sua Conta AWS com Segurança e Eficiência  [Ver resumo](./resumos/configurando-a-conta.md)
+- Introdução à AWS e ao Universo da Computação em Nuvem [Ver resumo](./resumos/computação-na-nuvem.md)
+- Fundamentos Essenciais da Infraestrutura AWS [Ver resumo](./resumos/infraestrutura.md)
+- Configurando sua Conta AWS com Segurança e Eficiência [Ver resumo](./resumos/configurando-a-conta.md)
 - Primeiros Passos com Acesso Seguro e Controle de Custos na AWS [Ver resumo](./resumos/acesso-seguro.md)
 
 ---
@@ -22,9 +22,9 @@
 
 > Dando vida à nuvem: criação e gerenciamento de instâncias, configurações e automações básicas com EC2.
 
-- Entendendo as Instâncias EC2 e a Otimização de Recursos na AWS [Ver resumo](./resumos/gerenciando-instâncias.md)
+- Entendendo as Instâncias EC2 e a Otimização de Recursos na AWS [Ver resumo](./resumos/computação-na-nuvem.md)
 - Armazenamento na Nuvem com Amazon EBS e S3 [Ver resumo](./resumos/armazenamento-na-nuvem.md)
-- Gerenciando Instâncias EC2 na AWS [Ver resumo](./resumos/Desafio1_ComputacaoNaNuvem_EC2.md)
+- Gerenciando Instâncias EC2 na AWS [Ver resumo](./resumos/gerenciamento-de-instancias.md)
 
 ---
 
@@ -32,11 +32,9 @@
 
 > Guardando o essencial: os serviços de armazenamento e banco de dados que sustentam o coração das aplicações na AWS.
 
-- Criando sua Primeira Instância Amazon EC2 [Ver resumo]()
-- Criando seu Primeiro Bucket no Amazon S3 [Ver resumo]()
-- Criando sua Primeira Função com Amazon Lambda [Ver resumo]()
-- Desafios de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional [Ver resumo]()
-- Associando Conceitos de Recursos da AWS [Ver resumo]()
+- Criando sua Primeira Instância Amazon EC2 [Ver resumo](./resumos/recursos-na-aws.md)
+- Criando seu Primeiro Bucket no Amazon S3 [Ver resumo](./resumos/primeiro-bucket.md)
+- Criando sua Primeira Função com Amazon Lambda [Ver resumo](./resumos/lambda.md)
 
 ---
 
@@ -44,12 +42,12 @@
 
 > Conectando os mundos: como a AWS integra e isola ambientes através de redes seguras e escaláveis.
 
-- Introdução à Amazon VPC [Ver resumo]()
-- Entendendo o que é uma Subnet na Amazon VPC [Ver resumo]()
-- Introdução ao Security Group na AWS [Ver resumo]()
-- Explorando os Fundamentos do Route 53 na AWS [Ver resumo]()
-- Introdução à Distribuição de Conteúdo com Amazon CloudFront [Ver resumo]()
-- Entendendo o que é o Amazon Elastic Load Balancer [Ver resumo]()
+- Introdução à Amazon VPC [Ver resumo](./resumos/vpc.md)
+- Entendendo o que é uma Subnet na Amazon VPC [Ver resumo](./resumos/subnet.md)
+- Introdução ao Security Group na AWS [Ver resumo](./resumos/security-group.md)
+- Explorando os Fundamentos do Route 53 na AWS [Ver resumo](./resumos/route53.md)
+- Introdução à Distribuição de Conteúdo com Amazon CloudFront [Ver resumo](./resumos/cloud-front.md)
+- Entendendo o que é o Amazon Elastic Load Balancer [Ver resumo](./resumos/elb.md)
 
 ---
 
@@ -57,8 +55,8 @@
 
 > Controlando o império: monitoramento, auditoria e boas práticas para manter a nuvem saudável e sob controle.
 
-- Entendendo o que é o Amazon RDS
-- Introdução ao Amazon DynamoDB
+- Entendendo o que é o Amazon RDS [Ver resumo](./resumos/rds.md)
+- Introdução ao Amazon DynamoDB [Ver resumo](./resumos/dynamo-db.md)
 - Explorando Estratégias de Backup e Recuperação de Dados na AWS
 
 ---
@@ -133,34 +131,13 @@
 ## Desafios 
 
 
-| Nº | Desafio                         | Link                                             | Status          |
-|----|---------------------------------|--------------------------------------------------| --------------- |
-| 1  | Gerenciamento de Instâncias EC2 | [Acessar repositório](./resumos/Desafio1_ComputacaoNaNuvem_EC2.md) | ✅ Concluído   |
-| 2  | AWS Step Functions              | [Acessar repositório](./resumos/Desafio2_StepFunctions.md) | ✅ Concluído |
-| 3  |                                 | [Acessar repositório]()                          | 🟡 Em progresso  |
-| 4  |                                 |  [Acessar repositório]()                         | 🔴 Não iniciado   |
-| 5  |                                 |  [Acessar repositório]()                         | 🔴 Não iniciado   |
-
----
-
-## Estrutura de Pastas
-
-```
-📁 bootcamp-santander-code-girls-2025
-┣ 📂 materiais-de-apoio
-┃ ┣ (ppt, xml, etc)
-┣ 📂 resumos
-┃ ┣ fundamentos-nuvem.md
-┃ ┣ ec2.md
-┃ ┣ armazenamento-bd.md
-┃ ┣ redes.md
-┃ ┣ governanca.md
-┃ ┣ seguranca.md
-┃ ┗ devops.md
-┣ 📂 imagens
-┃ ┗ (prints, diagramas, etc)
-┗ README.md
-```
+| Nº | Desafio                         | Link                                                   | Status          |
+|----|---------------------------------|--------------------------------------------------------| --------------- |
+| 1  | Gerenciamento de Instâncias EC2 | [Acessar repositório](./desafios/desafio1_gerenciamento-de-instancias)| ✅ Concluído   |
+| 2  | AWS Step Functions              | [Acessar repositório](./desafios/desafio2_step-functions)| ✅ Concluído |
+| 3  | AWS CloudFormation              | [Acessar repositório](./desafios/desafio3_aws-cloud-formation)| ✅ Concluído  |
+| 4  | Infraestrutura Automatizada     | [Acessar repositório](./desafios/desafio4_implementando-infraestrutura-automatizada)| ✅ Concluído   |
+| 5  |                                 |                               | 🟡 Em progresso    |
 
 ---
 

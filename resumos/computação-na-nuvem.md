@@ -12,18 +12,6 @@ fortuna mantendo máquinas que não está usando.
 
 ---
 
-### Sumário
-
-- Amazon EC2
-- Criando uma Instância EC2
-- Otimização: O Grande Desafio
-- Modelos de Precificação do EC2
-- Questões
-- Conclusão
-- Referências
-
----
-
 ### Amazon EC2
 
 Instâncias EC2 são máquinas virtuais na AWS, que podem rodar Windows ou Linux, e seguem o
@@ -174,47 +162,6 @@ horários automáticos, ou usar Auto Scaling para ajustar capacidade dinamicamen
 
 ---
 
-### Questões
-
-1. O que significa EC2?
-
-   - [ ]  Easy Cloud Computing
-   - [X]  Elastic Compute Cloud
-   - [ ]  Electronic Compute Cloud
-   - [ ]  Enterprise Compute Cloud
-2. Qual AMI roda Windows?
-
-   - [ ]  Ubuntu
-   - [ ]  Amazon Linux
-   - [X]  Windows Server 2022
-   - [ ]  Red Hat
-3. Qual tipo de instância é mais barato por hora?
-
-   - [ ]  On-Demand
-   - [ ]  Spot
-   - [X]  Reserved (se contratado por 1-3 anos)
-   - [ ]  Todas custam igual
-4. Spot instances podem ser pausadas quando?
-
-   - [ ]  Nunca
-   - [X]  Com 2 minutos de aviso, a qualquer hora
-   - [ ]  Só no fim de semana
-   - [ ]  Só durante a noite
-5. Para que serve um Elastic IP?
-
-   - [ ]  Para segurança
-   - [ ]  Para aumentar velocidade
-   - [X]  Para ter um endereço IP fixo que não muda
-   - [ ]  Para economizar dinheiro
-6. Qual é a melhor prática para economia?
-
-   - [ ]  Deixar tudo rodando 24/7
-   - [X]  Desligar o que não está usando
-   - [ ]  Comprar instâncias Spot sempre
-   - [ ]  Nunca desligar nada
-
----
-
 ### Conclusão
 
 EC2 é poderoso mas exige disciplina. Escolha a instância certa, monitore seus custos, desliga o que
@@ -227,4 +174,4 @@ não usa. O maior vilão de contas altas na AWS é "máquina esquecida rodando p
 - AWS EC2 Pricing: [https://aws.amazon.com/ec2/pricing/](https://aws.amazon.com/ec2/pricing/)
 - AWS EC2 Documentation: [https://docs.aws.amazon.com/ec2/](https://docs.aws.amazon.com/ec2/)
 
-Documento: [o-entendendo-as-instancias- ec2-e-a-otimização-de-recursos-na-aws.pdf](../materiais-de-apoio/o-entendendo-as-instancias-%20ec2-e-a-otimiza%C3%A7%C3%A3o-de-recursos-na-aws.pdf)
+---

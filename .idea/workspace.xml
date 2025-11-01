@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a558b786-9495-43d9-bfb4-e171708129a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/resumos/cloud-formation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resumos/cloud-front.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resumos/dynamo-db.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resumos/elb.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resumos/gerenciamento-de-instancias.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resumos/infraestrutura-automatizada.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resumos/lambda.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resumos/primeiro-bucket.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resumos/rds.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resumos/route53.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resumos/security-group.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resumos/step-functions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resumos/subnet.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resumos/vpc.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bootcamp-santander-code-girls-2025.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resumos/Desafio1_ComputacaoNaNuvem_EC2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resumos/Desafio2_StepFunctions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resumos/Desafio3_AWS-CloudFormation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resumos/Desafio4_Implementando-Infraestrutura-Automatizada.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resumos/acesso-seguro.md" beforeDir="false" afterPath="$PROJECT_DIR$/resumos/acesso-seguro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resumos/armazenamento-na-nuvem.md" beforeDir="false" afterPath="$PROJECT_DIR$/resumos/armazenamento-na-nuvem.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resumos/computação-na-nuvem.md" beforeDir="false" afterPath="$PROJECT_DIR$/resumos/computação-na-nuvem.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resumos/conceitos-basicos.md" beforeDir="false" afterPath="$PROJECT_DIR$/resumos/conceitos-basicos.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resumos/configurando-a-conta.md" beforeDir="false" afterPath="$PROJECT_DIR$/resumos/configurando-a-conta.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resumos/infraestrutura.md" beforeDir="false" afterPath="$PROJECT_DIR$/resumos/infraestrutura.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SinthianMar&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SinthianMar/bootcamp-santander-code-girls-2025.git&quot;,
+    &quot;accountId&quot;: &quot;bf2414bf-6d33-4c1b-80a9-a5f0b08f4897&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="34lIs9EqECIVcP1jJINzxH0y3be" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a558b786-9495-43d9-bfb4-e171708129a2" name="Changes" comment="" />
+      <created>1761781936737</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1761781936737</updated>
+    </task>
+    <servers />
+  </component>
+</project>

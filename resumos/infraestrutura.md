@@ -10,18 +10,6 @@ seus aplicativos.
 
 ---
 
-### Sumário
-
-- Regiões (Regions)
-- Zonas de Disponibilidade (Availability Zones - AZ)
-- Como Escolher uma Região?
-- Serviços Gerenciados da AWS
-- Questões
-- Conclusão
-- Referências
-
----
-
 ### Regiões (Regions)
 
 Uma Region é um local do mundo onde a AWS tem estrutura montada.Pense assim:
@@ -135,41 +123,6 @@ Exemplo uso real: E-commerce, streaming de vídeos, análise de dados gigantes.
 
 ---
 
-### Questões:
-
-1. O que é uma Região na AWS?
-
-   - [ ]  Um data center
-   - [X]  Uma área geográfica com múltiplas Zonas de Disponibilidade
-   - [ ]  Um computador
-   - [ ]  Uma máquina virtual
-2. Qual é a distância máxima entre Zonas de Disponibilidade?
-
-   - [ ]  10 km
-   - [ ]  50 km
-   - [X]  100 km (60 milhas)
-   - [ ]  500 km
-3. Se um data center cai, o que acontece?
-
-   - [ ]  Seu site inteiro cai
-   - [X]  Outros data centers na mesma zona continuam servindo
-   - [ ]  Você não consegue mais usar AWS
-   - [ ]  Tudo cai no mundo inteiro
-4. Qual fator NÃO é importante ao escolher uma Região?
-
-   - [ ]  Compliance legal
-   - [ ]  Latência para usuários
-   - [X]  A cor do mapa da região
-   - [ ]  Custo da região
-5. A região São Paulo é mais barata ou mais cara que Norte da Virgínia?
-
-   - [ ]  Mesma preço
-   - [X]  São Paulo é mais cara
-   - [ ]  Norte da Virgínia é mais cara
-   - [ ]  Não tem preço
-
----
-
 ### Conclusão
 
 A AWS é global, mas você precisa pensar localmente. Escolher a Região certa significa considerar
@@ -180,8 +133,9 @@ Zonas de Disponibilidade garantem que seu site continue funcionando mesmo se uma
 
 ### Referências
 
-- Mapa interativo de Regiões: [https://aws.amazon.com/about-aws/global-infrastructure/](https://aws.amazon.com/about-aws/global-infrastructure/)
-- Documentação Regiões:
-  [https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html](https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html)
+- Mapa interativo de Regiões: https://aws.amazon.com/about-aws/global-infrastructure/
+- Documentação Regiões:https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html
 
-Documento: [fundamentos-essenciais-da-infraestrutura-aws.pdf](../materiais-de-apoio/fundamentos-essenciais-da-infraestrutura-aws.pdf)
+---
+
+

@@ -9,18 +9,6 @@ e controlar quanto você está gastando. Ninguém quer surpresas horríveis na f
 
 ---
 
-### Sumário
-
-- O que é IAM (revisão rápida)
-- Chaves de Acesso para CLI
-- Criando Grupos de Usuários
-- Controlando Custos
-- Questões
-- Conclusão
-- Referências
-
----
-
 ### O que é IAM ?
 
 IAM = Identity and Access ManagementÉ o sistema que gerencia:
@@ -155,47 +143,6 @@ Rápido e seguro!
 
 ---
 
-### Questões
-
-1. O que é IAM?
-
-   - [ ]  Um serviço de armazenamento
-   - [X]  Identity and Access Management
-   - [ ]  Um banco de dados
-   - [ ]  Um tipo de servidor
-2. Chaves de acesso são para:
-
-   - [ ]  Fechar a porta
-   - [ ]  Acessar o console web
-   - [X]  Autenticar via CLI/programaticamente
-   - [ ]  Criar novos usuários
-3. É recomendado usar a chave root para CLI?
-
-   - [ ]  Sim
-   - [X]  Não
-   - [ ]  Às vezes
-   - [ ]  Só em segunda-feira
-4. O Free Tier dura quanto tempo?
-
-   - [ ]  3 meses
-   - [ ]  6 meses
-   - [X]  1 ano
-   - [ ]  Sempre grátis
-5. Qual é a melhor forma de controlar custos?
-
-   - [ ]  Esperar a fatura chegar
-   - [ ]  Rezar para não ficar caro
-   - [X]  Configurar alertas de orçamento
-   - [ ]  Desligar a AWS
-6. Depois que o Free Tier acaba, você para de pagar?
-
-   - [ ]  Sim
-   - [X]  Não, precisa cancelar ou desligar recursos
-   - [ ]  Depende
-   - [ ]  AWS avisa antes
-
----
-
 ### Conclusão
 
 Segurança e controle de custos são os dois pilares do sucesso na AWS. Use IAM para gerenciar
@@ -211,4 +158,4 @@ custo. Assim você trabalha tranquilo sem medo de surpresas.
   [https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/monitor_estimated_charges_with_cloudwatch.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/monitor_estimated_charges_with_cloudwatch.html)
 - AWS CLI Documentation: [https://docs.aws.amazon.com/cli/latest/userguide/](https://docs.aws.amazon.com/cli/latest/userguide/)
 
-Documento: [primeiros-passos-com-acesso-seguro-e-controle-de-custos-na-aws.pdf](../materiais-de-apoio/primeiros-passos-com-acesso-seguro-e-controle-de-custos-na-aws.pdf)
+---

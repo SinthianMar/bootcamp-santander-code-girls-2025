@@ -14,17 +14,6 @@ internet quando precisa. A AWS é a maior provedora de computação em nuvem do 
 
 ---
 
-### Sumário
-
-- A História da Amazon
-- A Criação da AWS
-- Serviço em Nuvem
-- Questões
-- Conclusão
-- Referências
-
----
-
 ## História da Amazon
 
 A Amazon foi fundada pelo Jeff Bezos, estava na moda a criação de sites pela internet e então ele teve uma grande ideia, uma <ins>livraria online!</ins>
@@ -131,41 +120,6 @@ Apesar de haver outras clouds (Google Cloud, Azure), a AWS é preferida porque t
 
 ---
 
-### Questões
-
-1. Qual foi a ideia inicial de Jeff Bezos?
-
-   - [ ]  Criar uma empresa de tecnologia
-   - [X]  Uma livraria online
-   - [ ]  Vender computadores
-   - [ ]  Fornecer serviços de nuvem
-2. Em que ano a AWS foi criada?
-
-   - [ ]  1994
-   - [ ]  1995
-   - [X]  2006
-   - [ ]  2010
-3. Qual é a principal vantagem do modelo de pagamento da AWS?
-
-   - [ ]  Você paga um valor fixo todo mês
-   - [X]  Você paga só pelo que usa
-   - [ ]  Você não paga nada
-   - [ ]  Você paga antecipado por 10 anos
-4. Na analogia do churrasco, o modelo SaaS é:
-
-   - [ ]  Você compra tudo e prepara
-   - [ ]  Você compra a carne e prepara
-   - [X]  O churrasco já vem pronto, você só come
-   - [ ]  Você aluga a churrasqueira
-5. Qual é o diferencial da AWS em relação a outras clouds?
-
-   - [ ]  É a mais barata
-   - [ ]  Tem os piores serviços
-   - [X]  Inova constantemente conforme evolução do mercado
-   - [ ]  Funciona só nos EUA
-
----
-
 ### Conclusão
 
 A AWS começou como uma solução interna da Amazon e se transformou na maior provedora
@@ -175,7 +129,7 @@ de nuvem do mundo. Entender sua história ajuda a entender por que ela é tão p
 
 ### Referências
 
-- [Site AWS](https://aws.amazon.com/pt/)
-- [Blog oficial](https://aws.amazon.com/pt/blogs/)
+- Referência geral da AWS - https://docs.aws.amazon.com/general/latest/gr/Welcome.html
+- Cotas de serviço da AWS - https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 
-Documento: [introducao-a-aws-e-conceitos-basicos.pdf](../materiais-de-apoio/introducao-a-aws-e-conceitos-basicos.pdf)
+---
